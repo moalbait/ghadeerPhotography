@@ -7,13 +7,43 @@
     <style>
         body { font-family: sans-serif; text-align: center; margin-top: 50px; }
         h1 { color: #3d5afe; }
-    </style>
+    
         /* this section controls the visual aspects of the page */
         body {
-            background-color: #FFB6C1; /* Light Pink color code */
+            background-color: #FFFFFF; /* Light Pink color code */
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            text-align: center
+            text-align: center;
             margin-top: 50px;
+        }
+        .top-title {
+            padding: 30px 0;
+        }
+        h1{
+            /* APPLYING EDWARDIAN SCRIPT HERE */
+            font-family: 'Edwardian Script ITC','ITC Edwardian Script', cursive;
+            font-size: 4.5em; /* Larger font size for the title */
+            color: black;
+            margin: 0;
+            font-weight: normal;
+
+        }
+        /*navigation bar styles*/
+        nav {
+            background-color: #FFFFFF; /* White background for nav */
+            padding: 15px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 50px;
+        }
+        nav a {
+            font-family: 'Edwardian Script ITC','ITC Edwardian Script', cursive;
+            font-size: 1.8em; /* Larger font size for nav links */
+            text-decoration: none;
+            color: #130a0ada; /* Hot Pink */
+            margin: 0 15px;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #D81B60; /* Deep Pink on hover */
         }
         .container {
             background-color: #ffffff; /* White background for content */
@@ -23,15 +53,29 @@
             display: inline-block;
         }
         h1 {
-            color: #FF69B4; /* Hot Pink color code */
-        
-            }
+            color: black; /* Hot Pink color code */
+            font-family: 'Edwardian Script ITC','ITC Edwardian Script', cursive;
+            font-size: 4.5em; /* Larger font size for the title */
+            margin: 0;
+            font-weight: normal;
+        }
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="top-title">
         <h1>Welcome to GheederPhotography</h1>
-        <p>This page is served by <strong>Python and Flask</strong>.</p>
+    <nav>
+        <a href="/Home">Home</a>
+        <a href="/About Me">About Me</a>
+        <a href="/Gallery">Gallery</a>
+        <a href="/Inquire">Inquire</a>
+        
+    </nav>   
+    
+    <div class="container">
+       
+        
     </div>
 </body>
+
 </html>
